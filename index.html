@@ -1,0 +1,1036 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Annual Engineering Report 2025 | Abdulrahman Mashaal</title>
+    <meta
+      name="description"
+      content="Annual Engineering Report 2025 for Abdulrahman Mashaal - Frontend Engineer. Highlights include 217 PRs, 100% success rate, and significant architectural improvements."
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Space+Grotesk:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="background-glow"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="container nav-container">
+        <div class="nav-brand">
+          <!-- <span class="brand-name">AM</span> -->
+          <span class="brand-title">Abdulrahman Mashaal</span>
+        </div>
+        <button class="nav-toggle" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="nav-menu">
+          <li><a href="#overview" class="nav-link">Overview</a></li>
+          <li><a href="#achievements" class="nav-link">Achievements</a></li>
+          <li><a href="#metrics" class="nav-link">Metrics</a></li>
+          <li><a href="#ai-tools" class="nav-link">AI Tools</a></li>
+          <li><a href="#courses" class="nav-link">Courses</a></li>
+          <!-- <li><a href="report.html" class="nav-link">Full Report</a></li> -->
+          <li class="nav-dropdown">
+            <a href="#" class="nav-link dropdown-toggle">
+              Download <i class="fas fa-chevron-down"></i>
+            </a>
+            <div class="nav-dropdown-content">
+              <a href="report.pdf" target="_blank" download="Report.pdf">
+                <i class="fas fa-file-code"></i> PDF Report
+              </a>
+              <a
+                href="report.md"
+                target="_blank"
+                download="Abdulrahman-Mashaal-Report-2025.md"
+              >
+                <i class="fas fa-file-alt"></i> Markdown Report
+              </a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <header class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <div class="company-stamp">
+            <a
+              href="https://futureface.sa/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="stamp-link"
+              title="FutureFace - Shaping Tomorrow's Digital Experience"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="183"
+                height="63"
+                viewBox="0 0 183 63"
+                fill="none"
+              >
+                <path
+                  d="M182.478 32.032a39.977 39.977 0 01-.909 7.426c-1.09 4.988-3.206 9.88-6.12 14.16a41.243 41.243 0 01-5.722 6.717 5.846 5.846 0 01-3.302 1.54 6.07 6.07 0 01-3.269-.52 5.745 5.745 0 01-2.774-2.816 5.496 5.496 0 011.29-6.263 30.304 30.304 0 004.875-5.983 28.953 28.953 0 004.33-14.258c.018-.257.018-.53.018-.812 0-.246 0-.5.012-.764v-.04c-.078-2.797-.507-5.48-1.278-7.975-1.47-4.82-4.22-9.233-7.957-12.77a5.524 5.524 0 01-1.63-2.839 5.506 5.506 0 01.62-3.964c.721-1.24 1.946-2.19 3.361-2.6a5.95 5.95 0 014.84.668c.506.312.938.738 1.317 1.11.071.076.149.148.22.215a41.266 41.266 0 015.063 6.098 40.38 40.38 0 013.788 6.905c2.271 5.3 3.391 11.095 3.23 16.762l-.003.003z"
+                  fill="#17479E"
+                />
+                <path
+                  d="M182.478 32.032a39.977 39.977 0 01-.909 7.426c-1.09 4.988-3.206 9.88-6.12 14.16a41.243 41.243 0 01-5.722 6.717 5.846 5.846 0 01-3.302 1.54 6.07 6.07 0 01-3.269-.52 5.745 5.745 0 01-2.774-2.816 5.496 5.496 0 011.29-6.263 30.304 30.304 0 004.875-5.983 28.953 28.953 0 004.33-14.258c.018-.257.018-.53.018-.812 0-.246 0-.5.012-.764v-.04c-.078-2.797-.507-5.48-1.278-7.975-1.47-4.82-4.22-9.233-7.957-12.77a5.524 5.524 0 01-1.63-2.839 5.506 5.506 0 01.62-3.964c.721-1.24 1.946-2.19 3.361-2.6a5.95 5.95 0 014.84.668c.506.312.938.738 1.317 1.11.071.076.149.148.22.215a41.266 41.266 0 015.063 6.098 40.38 40.38 0 013.788 6.905c2.271 5.3 3.391 11.095 3.23 16.762l-.003.003z"
+                  fill="#F2714A"
+                />
+                <path
+                  d="M46.398 15.863c0 6.376-4.115 11.028-11.744 11.028S22.871 22.24 22.871 15.863V.813a.79.79 0 01.802-.779h5.53a.79.79 0 01.802.778v15.16c0 2.748 1.02 4.728 4.646 4.728 3.627 0 4.607-1.977 4.607-4.727V.813a.79.79 0 01.802-.779h5.53a.79.79 0 01.802.778v15.05h.006zm11.646 10.233V6.43h-7.662a.807.807 0 01-.82-.795V.83c0-.439.367-.795.82-.795h22.61c.452 0 .819.356.819.795v4.806c0 .44-.367.795-.82.795H65.33v19.666c0 .44-.367.795-.82.795h-5.647a.807.807 0 01-.82-.795zm42.18-10.233c0 6.376-4.116 11.028-11.745 11.028S76.696 22.24 76.696 15.863V.813a.79.79 0 01.802-.779h5.53a.79.79 0 01.802.778v15.16c0 2.748 1.02 4.728 4.646 4.728 3.627 0 4.607-1.977 4.607-4.727V.813a.79.79 0 01.802-.779h5.53a.79.79 0 01.803.778v15.05h.006zm52.179 11.028h-17.946a.807.807 0 01-.819-.795V.829c0-.439.366-.795.819-.795h18.032c.453 0 .82.356.82.795v4.543c0 .44-.367.795-.82.795h-11.565v3.852h10.09c.453 0 .82.355.82.795v4.543c0 .44-.367.795-.82.795h-10.09v4.6h11.479c.453 0 .819.356.819.796v4.542c0 .44-.366.795-.819.795v.006zM93.104 56.943H83.39l-1.546 4.436a.82.82 0 01-.778.54H75.47c-.572 0-.969-.552-.77-1.072l9.647-25.267a.82.82 0 01.769-.52h6.836c.343 0 .653.208.769.52l9.539 25.267c.197.52-.2 1.07-.769 1.07h-6.1a.815.815 0 01-.778-.547l-1.51-4.43.002.003zm-7.75-5.575h5.858l-2.89-8.527-2.969 8.527zm67.049 10.552h-17.946a.807.807 0 01-.819-.796V35.858c0-.44.366-.795.819-.795h17.675c.453 0 1.177.355 1.177.795V40.4c0 .44-.367.796-.82.796h-11.565v3.851h10.09c.453 0 .82.356.82.795v4.543c0 .44-.367.795-.82.795h-10.09v4.6h11.479c.453 0 .819.356.819.796v4.542c0 .44-.366.795-.819.795v.006zM76.127 35.06H58.914a.808.808 0 00-.82.795v4.224c0 .44.368.796.82.796h17.213c.452 0 .82-.356.82-.796v-4.224a.808.808 0 00-.82-.795zM58.095 45.926v15.198c0 .44.366.795.82.795h5.646c.453 0 .82-.355.82-.795v-9.857h8.856c.453 0 .82-.356.82-.795v-4.543a.807.807 0 00-.82-.795H58.914a.807.807 0 00-.82.795v-.003zm65.465 5.257a.813.813 0 00-.769.523c-.965 2.698-3.296 4.453-6.21 4.453-4.086 0-6.67-3.105-6.67-7.706 0-4.6 2.584-7.63 6.67-7.63 2.7 0 4.881 1.471 5.954 3.77.131.28.423.457.739.457h6.243c.545 0 .948-.512.79-1.02-1.797-5.743-7.128-9.528-13.804-9.528-7.864 0-14.071 6.098-14.071 13.951 0 7.854 6.207 14.027 14.071 14.027 6.968 0 12.439-4.091 14.012-10.314.125-.5-.268-.983-.798-.983h-6.157zM18.032.034H.82A.808.808 0 000 .829v4.225c0 .439.367.795.82.795h17.212c.453 0 .82-.356.82-.795V.829a.808.808 0 00-.82-.795zM0 10.9v15.198c0 .44.367.795.82.795h5.647c.453 0 .82-.355.82-.795v-9.857h8.856c.453 0 .82-.356.82-.795v-4.543a.807.807 0 00-.82-.795H.82a.807.807 0 00-.82.795V10.9zm106.348 15.196V.829c0-.439.366-.795.819-.795h10.514c7.479 0 11.759 3.256 11.759 8.979 0 3.44-2.119 6.283-5.859 7.818l5.954 8.831c.358.53-.036 1.232-.685 1.232h-6.699a.826.826 0 01-.698-.379l-5.426-8.562h-2.39V26.1c0 .44-.367.795-.82.795h-5.647a.807.807 0 01-.819-.795l-.003-.003zm7.286-13.98h3.74c3.239 0 4.741-.972 4.741-3.106s-1.505-3.143-4.741-3.143h-3.74v6.248zM178.635 1.76h.5v1.282h.304V1.76h.501v-.272h-1.305v.272zm2.277.88l-.48-1.13-.009-.02h-.349v1.552h.286v-.998l.417.978.009.02h.248l.429-1v1h.286V1.489h-.349l-.488 1.151z"
+                  fill="#17479E"
+                />
+                <path
+                  d="M180.194 0c-1.288 0-2.337 1.015-2.337 2.264 0 1.25 1.049 2.264 2.337 2.264 1.287 0 2.336-1.015 2.336-2.264 0-1.25-1.049-2.264-2.336-2.264zm2.041 2.264c0 1.093-.915 1.98-2.041 1.98-1.127 0-2.042-.887-2.042-1.98s.915-1.98 2.042-1.98c1.126 0 2.041.887 2.041 1.98z"
+                  fill="#17479E"
+                />
+              </svg>
+            </a>
+          </div>
+          <span class="badge">Annual Report 2025</span>
+          <h1>Abdulrahman Mashaal</h1>
+          <h2>
+            <span id="hero-subtitle">Problem Solver</span
+            ><span class="cursor">|</span>
+          </h2>
+          <p class="hero-text">
+            AI-powered software architect delivering excellence across
+            enterprise solutions. Specializing in modern web technologies and
+            scalable frontend architectures.
+          </p>
+          <!-- Tech Stack Slider -->
+          <section id="tech-stack" class="tech-stack-section">
+            <div class="tech-slider-container">
+              <div class="tech-slider-row core-row">
+                <div class="tech-track">
+                  <div class="tech-icon">
+                    <i class="fab fa-react"></i><span>React</span>
+                  </div>
+                  <div class="tech-icon">
+                    <i class="fab fa-js"></i><span>JavaScript</span>
+                  </div>
+                  <div class="tech-icon">
+                    <i class="fab fa-node-js"></i><span>Node.js</span>
+                  </div>
+                  <div class="tech-icon">
+                    <i class="fab fa-sass"></i><span>Sass</span>
+                  </div>
+                  <div class="tech-icon">
+                    <i class="fab fa-html5"></i><span>HTML5</span>
+                  </div>
+                  <div class="tech-icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="43"
+                      height="43"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M6.41 0L3.845 2.565l3.849.366L8.878.226l2.663 6.883l.35.904l.384-.93L14.75 1.09v-.001l.275-.667l1.1 2.51l3.848-.367L17.407 0h-8.43Zm2.391 1.72l-.73 1.735l-2.886-.221l-3.723-.302l1.1 4.58l5.282 1.964l.014.026l2.558.945h.244l-.001-.005h.882V8.797Zm6.282.16l-2.808 6.799v1.763h1.006l-.002.005l.244-.005h.035l.002-.001h.024l2.376-.878l.01-.018l5.469-2.033l1.099-4.58l-4.042.318l-2.749.206zM2.745 8.245v6.228l4.398 3.664v-5.68l1.284-1.832l-1.65.367L4.76 8.977Zm18.327 0l-2.017.733l-2.015 2.014l-1.65-.367l1.284 1.832v5.68l4.398-3.664zM9.137 10.599l-.304.487l.009.016l-1.148 1.722v8.245l1.1 1.648L10.075 24h3.665l1.283-1.282l1.1-1.65v-8.244l-1.15-1.723l.01-.015l-.18-.24l-.147-.22l-.013.007l-.025-.034l-.791.487h-3.655zm-4.376 6.256v2.381l2.382 2.382V18.87zm14.295 0l-2.382 2.015v2.748l2.382-2.382z"
+                      /></svg><span>PRIMENG</span>
+                  </div>
+                  <div class="tech-icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="43"
+                      height="43"
+                      viewBox="0 0 32 32"
+                    >
+                      <path
+                        stroke="currentColor"
+                        fill="none"
+                        stroke-linecap="round"
+                        stroke-width="4.48"
+                        d="m27.76 16.56l-11.2 11.2m8.96-23.52L4.24 25.52"
+                      /></svg><span>SHADCN</span>
+                  </div>
+                  <div class="tech-icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="43"
+                      height="43"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        fill="currentColor"
+                        fill-rule="evenodd"
+                        d="M4.985 2c-1.37 0-2.383 1.199-2.337 2.498c.043 1.25-.013 2.867-.42 4.186c-.41 1.322-1.1 2.16-2.228 2.268v1.215c1.128.107 1.819.945 2.227 2.268c.408 1.319.464 2.936.42 4.185c-.045 1.3.968 2.499 2.338 2.499h14.032c1.37 0 2.383-1.199 2.337-2.499c-.043-1.249.013-2.866.42-4.185c.409-1.323 1.098-2.16 2.226-2.268v-1.215c-1.128-.108-1.817-.946-2.226-2.268c-.407-1.32-.463-2.937-.42-4.186C21.4 3.198 20.386 2 19.017 2zM16.27 13.769c0 1.79-1.335 2.875-3.55 2.875H8.949a.407.407 0 0 1-.407-.407V6.881a.407.407 0 0 1 .407-.406h3.75c1.847 0 3.06 1 3.06 2.537c0 1.078-.816 2.043-1.855 2.213v.056c1.415.155 2.367 1.135 2.367 2.488M12.31 7.764h-2.15v3.038h1.811c1.4 0 2.172-.564 2.172-1.572c0-.944-.664-1.466-1.833-1.466m-2.15 4.243v3.347h2.23c1.457 0 2.23-.585 2.23-1.684c0-1.1-.794-1.663-2.324-1.663z"
+                        clip-rule="evenodd"/></svg><span>BOOTSTRAP</span>
+                  </div>
+                  <div class="tech-icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="43"
+                      height="43"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M6.312 12.564L12.636 1.2H0zM14.94 1.2L7.464 14.64L12 22.8L24 1.2zm4.98 2.4L12 17.856l-1.788-3.216L16.344 3.6zM6.312 7.62L4.08 3.6h4.476z"
+                      /></svg><span>VUETIFY</span>
+                  </div>
+                  <div class="tech-icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="43"
+                      height="43"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M6.41 0L3.845 2.565l3.849.366L8.878.226l2.663 6.883l.35.904l.384-.93L14.75 1.09v-.001l.275-.667l1.1 2.51l3.848-.367L17.407 0h-8.43Zm2.391 1.72l-.73 1.735l-2.886-.221l-3.723-.302l1.1 4.58l5.282 1.964l.014.026l2.558.945h.244l-.001-.005h.882V8.797Zm6.282.16l-2.808 6.799v1.763h1.006l-.002.005l.244-.005h.035l.002-.001h.024l2.376-.878l.01-.018l5.469-2.033l1.099-4.58l-4.042.318l-2.749.206zM2.745 8.245v6.228l4.398 3.664v-5.68l1.284-1.832l-1.65.367L4.76 8.977Zm18.327 0l-2.017.733l-2.015 2.014l-1.65-.367l1.284 1.832v5.68l4.398-3.664zM9.137 10.599l-.304.487l.009.016l-1.148 1.722v8.245l1.1 1.648L10.075 24h3.665l1.283-1.282l1.1-1.65v-8.244l-1.15-1.723l.01-.015l-.18-.24l-.147-.22l-.013.007l-.025-.034l-.791.487h-3.655zm-4.376 6.256v2.381l2.382 2.382V18.87zm14.295 0l-2.382 2.015v2.748l2.382-2.382z"
+                      /></svg><span>PRIMEVUE</span>
+                  </div>
+                  <div class="tech-icon">
+                    <i class="fab fa-angular"></i><span>Angular</span>
+                  </div>
+                  <div class="tech-icon">
+                    <i class="fab fa-react"></i><span>React</span>
+                  </div>
+                  <div class="tech-icon">
+                    <i class="fab fa-js"></i><span>JavaScript</span>
+                  </div>
+                  <div class="tech-icon">
+                    <i class="fab fa-node-js"></i><span>Node.js</span>
+                  </div>
+                  <div class="tech-icon">
+                    <i class="fab fa-sass"></i><span>Sass</span>
+                  </div>
+                  <div class="tech-icon">
+                    <i class="fab fa-html5"></i><span>HTML5</span>
+                  </div>
+                  <div class="tech-icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="43"
+                      height="43"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M6.41 0L3.845 2.565l3.849.366L8.878.226l2.663 6.883l.35.904l.384-.93L14.75 1.09v-.001l.275-.667l1.1 2.51l3.848-.367L17.407 0h-8.43Zm2.391 1.72l-.73 1.735l-2.886-.221l-3.723-.302l1.1 4.58l5.282 1.964l.014.026l2.558.945h.244l-.001-.005h.882V8.797Zm6.282.16l-2.808 6.799v1.763h1.006l-.002.005l.244-.005h.035l.002-.001h.024l2.376-.878l.01-.018l5.469-2.033l1.099-4.58l-4.042.318l-2.749.206zM2.745 8.245v6.228l4.398 3.664v-5.68l1.284-1.832l-1.65.367L4.76 8.977Zm18.327 0l-2.017.733l-2.015 2.014l-1.65-.367l1.284 1.832v5.68l4.398-3.664zM9.137 10.599l-.304.487l.009.016l-1.148 1.722v8.245l1.1 1.648L10.075 24h3.665l1.283-1.282l1.1-1.65v-8.244l-1.15-1.723l.01-.015l-.18-.24l-.147-.22l-.013.007l-.025-.034l-.791.487h-3.655zm-4.376 6.256v2.381l2.382 2.382V18.87zm14.295 0l-2.382 2.015v2.748l2.382-2.382z"
+                      /></svg><span>PRIMENG</span>
+                  </div>
+                  <div class="tech-icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="43"
+                      height="43"
+                      viewBox="0 0 32 32"
+                    >
+                      <path
+                        stroke="currentColor"
+                        fill="none"
+                        stroke-linecap="round"
+                        stroke-width="4.48"
+                        d="m27.76 16.56l-11.2 11.2m8.96-23.52L4.24 25.52"
+                      /></svg><span>SHADCN</span>
+                  </div>
+                  <div class="tech-icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="43"
+                      height="43"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        fill="currentColor"
+                        fill-rule="evenodd"
+                        d="M4.985 2c-1.37 0-2.383 1.199-2.337 2.498c.043 1.25-.013 2.867-.42 4.186c-.41 1.322-1.1 2.16-2.228 2.268v1.215c1.128.107 1.819.945 2.227 2.268c.408 1.319.464 2.936.42 4.185c-.045 1.3.968 2.499 2.338 2.499h14.032c1.37 0 2.383-1.199 2.337-2.499c-.043-1.249.013-2.866.42-4.185c.409-1.323 1.098-2.16 2.226-2.268v-1.215c-1.128-.108-1.817-.946-2.226-2.268c-.407-1.32-.463-2.937-.42-4.186C21.4 3.198 20.386 2 19.017 2zM16.27 13.769c0 1.79-1.335 2.875-3.55 2.875H8.949a.407.407 0 0 1-.407-.407V6.881a.407.407 0 0 1 .407-.406h3.75c1.847 0 3.06 1 3.06 2.537c0 1.078-.816 2.043-1.855 2.213v.056c1.415.155 2.367 1.135 2.367 2.488M12.31 7.764h-2.15v3.038h1.811c1.4 0 2.172-.564 2.172-1.572c0-.944-.664-1.466-1.833-1.466m-2.15 4.243v3.347h2.23c1.457 0 2.23-.585 2.23-1.684c0-1.1-.794-1.663-2.324-1.663z"
+                        clip-rule="evenodd"
+                      /></svg><span>BOOTSTRAP</span>
+                  </div>
+                  <div class="tech-icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="43"
+                      height="43"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M6.312 12.564L12.636 1.2H0zM14.94 1.2L7.464 14.64L12 22.8L24 1.2zm4.98 2.4L12 17.856l-1.788-3.216L16.344 3.6zM6.312 7.62L4.08 3.6h4.476z"
+                      /></svg><span>VUETIFY</span>
+                  </div>
+                  <div class="tech-icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="43"
+                      height="43"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M6.41 0L3.845 2.565l3.849.366L8.878.226l2.663 6.883l.35.904l.384-.93L14.75 1.09v-.001l.275-.667l1.1 2.51l3.848-.367L17.407 0h-8.43Zm2.391 1.72l-.73 1.735l-2.886-.221l-3.723-.302l1.1 4.58l5.282 1.964l.014.026l2.558.945h.244l-.001-.005h.882V8.797Zm6.282.16l-2.808 6.799v1.763h1.006l-.002.005l.244-.005h.035l.002-.001h.024l2.376-.878l.01-.018l5.469-2.033l1.099-4.58l-4.042.318l-2.749.206zM2.745 8.245v6.228l4.398 3.664v-5.68l1.284-1.832l-1.65.367L4.76 8.977Zm18.327 0l-2.017.733l-2.015 2.014l-1.65-.367l1.284 1.832v5.68l4.398-3.664zM9.137 10.599l-.304.487l.009.016l-1.148 1.722v8.245l1.1 1.648L10.075 24h3.665l1.283-1.282l1.1-1.65v-8.244l-1.15-1.723l.01-.015l-.18-.24l-.147-.22l-.013.007l-.025-.034l-.791.487h-3.655zm-4.376 6.256v2.381l2.382 2.382V18.87zm14.295 0l-2.382 2.015v2.748l2.382-2.382z"
+                      /></svg><span>PRIMEVUE</span>
+                  </div>
+                  <div class="tech-icon">
+                    <i class="fab fa-angular"></i><span>Angular</span>
+                  </div>
+                  <div class="tech-icon">
+                    <i class="fab fa-react"></i><span>React</span>
+                  </div>
+                  <div class="tech-icon">
+                    <i class="fab fa-js"></i><span>JavaScript</span>
+                  </div>
+                  <div class="tech-icon">
+                    <i class="fab fa-node-js"></i><span>Node.js</span>
+                  </div>
+                  <div class="tech-icon">
+                    <i class="fab fa-sass"></i><span>Sass</span>
+                  </div>
+                  <div class="tech-icon">
+                    <i class="fab fa-html5"></i><span>HTML5</span>
+                  </div>
+                  <div class="tech-icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="43"
+                      height="43"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M6.41 0L3.845 2.565l3.849.366L8.878.226l2.663 6.883l.35.904l.384-.93L14.75 1.09v-.001l.275-.667l1.1 2.51l3.848-.367L17.407 0h-8.43Zm2.391 1.72l-.73 1.735l-2.886-.221l-3.723-.302l1.1 4.58l5.282 1.964l.014.026l2.558.945h.244l-.001-.005h.882V8.797Zm6.282.16l-2.808 6.799v1.763h1.006l-.002.005l.244-.005h.035l.002-.001h.024l2.376-.878l.01-.018l5.469-2.033l1.099-4.58l-4.042.318l-2.749.206zM2.745 8.245v6.228l4.398 3.664v-5.68l1.284-1.832l-1.65.367L4.76 8.977Zm18.327 0l-2.017.733l-2.015 2.014l-1.65-.367l1.284 1.832v5.68l4.398-3.664zM9.137 10.599l-.304.487l.009.016l-1.148 1.722v8.245l1.1 1.648L10.075 24h3.665l1.283-1.282l1.1-1.65v-8.244l-1.15-1.723l.01-.015l-.18-.24l-.147-.22l-.013.007l-.025-.034l-.791.487h-3.655zm-4.376 6.256v2.381l2.382 2.382V18.87zm14.295 0l-2.382 2.015v2.748l2.382-2.382z"
+                      /></svg><span>PRIMENG</span>
+                  </div>
+                  <div class="tech-icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="43"
+                      height="43"
+                      viewBox="0 0 32 32"
+                    >
+                      <path
+                        stroke="currentColor"
+                        fill="none"
+                        stroke-linecap="round"
+                        stroke-width="4.48"
+                        d="m27.76 16.56l-11.2 11.2m8.96-23.52L4.24 25.52"
+                      /></svg><span>SHADCN</span>
+                  </div>
+                  <div class="tech-icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="43"
+                      height="43"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        fill="currentColor"
+                        fill-rule="evenodd"
+                        d="M4.985 2c-1.37 0-2.383 1.199-2.337 2.498c.043 1.25-.013 2.867-.42 4.186c-.41 1.322-1.1 2.16-2.228 2.268v1.215c1.128.107 1.819.945 2.227 2.268c.408 1.319.464 2.936.42 4.185c-.045 1.3.968 2.499 2.338 2.499h14.032c1.37 0 2.383-1.199 2.337-2.499c-.043-1.249.013-2.866.42-4.185c.409-1.323 1.098-2.16 2.226-2.268v-1.215c-1.128-.108-1.817-.946-2.226-2.268c-.407-1.32-.463-2.937-.42-4.186C21.4 3.198 20.386 2 19.017 2zM16.27 13.769c0 1.79-1.335 2.875-3.55 2.875H8.949a.407.407 0 0 1-.407-.407V6.881a.407.407 0 0 1 .407-.406h3.75c1.847 0 3.06 1 3.06 2.537c0 1.078-.816 2.043-1.855 2.213v.056c1.415.155 2.367 1.135 2.367 2.488M12.31 7.764h-2.15v3.038h1.811c1.4 0 2.172-.564 2.172-1.572c0-.944-.664-1.466-1.833-1.466m-2.15 4.243v3.347h2.23c1.457 0 2.23-.585 2.23-1.684c0-1.1-.794-1.663-2.324-1.663z"
+                        clip-rule="evenodd"
+                      /></svg><span>BOOTSTRAP</span>
+                  </div>
+                  <div class="tech-icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="43"
+                      height="43"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M6.312 12.564L12.636 1.2H0zM14.94 1.2L7.464 14.64L12 22.8L24 1.2zm4.98 2.4L12 17.856l-1.788-3.216L16.344 3.6zM6.312 7.62L4.08 3.6h4.476z"
+                      /></svg><span>VUETIFY</span>
+                  </div>
+                  <div class="tech-icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="43"
+                      height="43"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M6.41 0L3.845 2.565l3.849.366L8.878.226l2.663 6.883l.35.904l.384-.93L14.75 1.09v-.001l.275-.667l1.1 2.51l3.848-.367L17.407 0h-8.43Zm2.391 1.72l-.73 1.735l-2.886-.221l-3.723-.302l1.1 4.58l5.282 1.964l.014.026l2.558.945h.244l-.001-.005h.882V8.797Zm6.282.16l-2.808 6.799v1.763h1.006l-.002.005l.244-.005h.035l.002-.001h.024l2.376-.878l.01-.018l5.469-2.033l1.099-4.58l-4.042.318l-2.749.206zM2.745 8.245v6.228l4.398 3.664v-5.68l1.284-1.832l-1.65.367L4.76 8.977Zm18.327 0l-2.017.733l-2.015 2.014l-1.65-.367l1.284 1.832v5.68l4.398-3.664zM9.137 10.599l-.304.487l.009.016l-1.148 1.722v8.245l1.1 1.648L10.075 24h3.665l1.283-1.282l1.1-1.65v-8.244l-1.15-1.723l.01-.015l-.18-.24l-.147-.22l-.013.007l-.025-.034l-.791.487h-3.655zm-4.376 6.256v2.381l2.382 2.382V18.87zm14.295 0l-2.382 2.015v2.748l2.382-2.382z"
+                      /></svg><span>PRIMEVUE</span>
+                  </div>
+                  <div class="tech-icon">
+                    <i class="fab fa-angular"></i><span>Angular</span>
+                  </div>
+                  <div class="tech-icon">
+                    <i class="fab fa-react"></i><span>React</span>
+                  </div>
+                  <div class="tech-icon">
+                    <i class="fab fa-js"></i><span>JavaScript</span>
+                  </div>
+                  <div class="tech-icon">
+                    <i class="fab fa-node-js"></i><span>Node.js</span>
+                  </div>
+                  <div class="tech-icon">
+                    <i class="fab fa-sass"></i><span>Sass</span>
+                  </div>
+                  <div class="tech-icon">
+                    <i class="fab fa-html5"></i><span>HTML5</span>
+                  </div>
+                  <div class="tech-icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="43"
+                      height="43"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M6.41 0L3.845 2.565l3.849.366L8.878.226l2.663 6.883l.35.904l.384-.93L14.75 1.09v-.001l.275-.667l1.1 2.51l3.848-.367L17.407 0h-8.43Zm2.391 1.72l-.73 1.735l-2.886-.221l-3.723-.302l1.1 4.58l5.282 1.964l.014.026l2.558.945h.244l-.001-.005h.882V8.797Zm6.282.16l-2.808 6.799v1.763h1.006l-.002.005l.244-.005h.035l.002-.001h.024l2.376-.878l.01-.018l5.469-2.033l1.099-4.58l-4.042.318l-2.749.206zM2.745 8.245v6.228l4.398 3.664v-5.68l1.284-1.832l-1.65.367L4.76 8.977Zm18.327 0l-2.017.733l-2.015 2.014l-1.65-.367l1.284 1.832v5.68l4.398-3.664zM9.137 10.599l-.304.487l.009.016l-1.148 1.722v8.245l1.1 1.648L10.075 24h3.665l1.283-1.282l1.1-1.65v-8.244l-1.15-1.723l.01-.015l-.18-.24l-.147-.22l-.013.007l-.025-.034l-.791.487h-3.655zm-4.376 6.256v2.381l2.382 2.382V18.87zm14.295 0l-2.382 2.015v2.748l2.382-2.382z"
+                      /></svg><span>PRIMENG</span>
+                  </div>
+                  <div class="tech-icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="43"
+                      height="43"
+                      viewBox="0 0 32 32"
+                    >
+                      <path
+                        stroke="currentColor"
+                        fill="none"
+                        stroke-linecap="round"
+                        stroke-width="4.48"
+                        d="m27.76 16.56l-11.2 11.2m8.96-23.52L4.24 25.52"
+                      /></svg><span>SHADCN</span>
+                  </div>
+                  <div class="tech-icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="43"
+                      height="43"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        fill="currentColor"
+                        fill-rule="evenodd"
+                        d="M4.985 2c-1.37 0-2.383 1.199-2.337 2.498c.043 1.25-.013 2.867-.42 4.186c-.41 1.322-1.1 2.16-2.228 2.268v1.215c1.128.107 1.819.945 2.227 2.268c.408 1.319.464 2.936.42 4.185c-.045 1.3.968 2.499 2.338 2.499h14.032c1.37 0 2.383-1.199 2.337-2.499c-.043-1.249.013-2.866.42-4.185c.409-1.323 1.098-2.16 2.226-2.268v-1.215c-1.128-.108-1.817-.946-2.226-2.268c-.407-1.32-.463-2.937-.42-4.186C21.4 3.198 20.386 2 19.017 2zM16.27 13.769c0 1.79-1.335 2.875-3.55 2.875H8.949a.407.407 0 0 1-.407-.407V6.881a.407.407 0 0 1 .407-.406h3.75c1.847 0 3.06 1 3.06 2.537c0 1.078-.816 2.043-1.855 2.213v.056c1.415.155 2.367 1.135 2.367 2.488M12.31 7.764h-2.15v3.038h1.811c1.4 0 2.172-.564 2.172-1.572c0-.944-.664-1.466-1.833-1.466m-2.15 4.243v3.347h2.23c1.457 0 2.23-.585 2.23-1.684c0-1.1-.794-1.663-2.324-1.663z"
+                        clip-rule="evenodd"
+                      /></svg><span>BOOTSTRAP</span>
+                  </div>
+                  <div class="tech-icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="43"
+                      height="43"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M6.312 12.564L12.636 1.2H0zM14.94 1.2L7.464 14.64L12 22.8L24 1.2zm4.98 2.4L12 17.856l-1.788-3.216L16.344 3.6zM6.312 7.62L4.08 3.6h4.476z"
+                      /></svg><span>VUETIFY</span>
+                  </div>
+                  <div class="tech-icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="43"
+                      height="43"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M6.41 0L3.845 2.565l3.849.366L8.878.226l2.663 6.883l.35.904l.384-.93L14.75 1.09v-.001l.275-.667l1.1 2.51l3.848-.367L17.407 0h-8.43Zm2.391 1.72l-.73 1.735l-2.886-.221l-3.723-.302l1.1 4.58l5.282 1.964l.014.026l2.558.945h.244l-.001-.005h.882V8.797Zm6.282.16l-2.808 6.799v1.763h1.006l-.002.005l.244-.005h.035l.002-.001h.024l2.376-.878l.01-.018l5.469-2.033l1.099-4.58l-4.042.318l-2.749.206zM2.745 8.245v6.228l4.398 3.664v-5.68l1.284-1.832l-1.65.367L4.76 8.977Zm18.327 0l-2.017.733l-2.015 2.014l-1.65-.367l1.284 1.832v5.68l4.398-3.664zM9.137 10.599l-.304.487l.009.016l-1.148 1.722v8.245l1.1 1.648L10.075 24h3.665l1.283-1.282l1.1-1.65v-8.244l-1.15-1.723l.01-.015l-.18-.24l-.147-.22l-.013.007l-.025-.034l-.791.487h-3.655zm-4.376 6.256v2.381l2.382 2.382V18.87zm14.295 0l-2.382 2.015v2.748l2.382-2.382z"
+                      /></svg><span>PRIMEVUE</span>
+                  </div>
+                  <div class="tech-icon">
+                    <i class="fab fa-angular"></i><span>Angular</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tech-slider-row tools-row">
+                <div class="tech-track reverse">
+                  <div class="tech-icon">
+                    <i class="fab fa-git-alt"></i><span>Git</span>
+                  </div>
+                  <div class="tech-icon">
+                    <i class="fab fa-figma"></i><span>Figma</span>
+                  </div>
+                  <div class="tech-icon">
+                    <i class="fas fa-database"></i><span>Supabase</span>
+                  </div>
+                  <div class="tech-icon">
+                    <i class="fab fa-github"></i><span>GitHub</span>
+                  </div>
+                  <div class="tech-icon">
+                    <i class="fas fa-bolt"></i><span>Vite</span>
+                  </div>
+                  <div class="tech-icon">
+                    <i class="fab fa-npm"></i><span>NPM</span>
+                  </div>
+                  <div class="tech-icon">
+                    <i class="fab fa-git-alt"></i><span>Git</span>
+                  </div>
+                  <div class="tech-icon">
+                    <i class="fab fa-figma"></i><span>Figma</span>
+                  </div>
+                  <div class="tech-icon">
+                    <i class="fas fa-database"></i><span>Supabase</span>
+                  </div>
+                  <div class="tech-icon">
+                    <i class="fab fa-github"></i><span>GitHub</span>
+                  </div>
+                  <div class="tech-icon">
+                    <i class="fas fa-bolt"></i><span>Vite</span>
+                  </div>
+                  <div class="tech-icon">
+                    <i class="fab fa-npm"></i><span>NPM</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <div class="hero-actions stagger-delay-2">
+            <a href="#achievements" class="btn btn-primary"
+              >View Achievements</a
+            >
+            <div class="dropdown">
+              <a
+                href="report.html"
+                target="_blank"
+                download="Abdulrahman-Mashaal-Report-2025.pdf"
+                class="btn btn-outline"
+                style="
+                  font-family: inherit;
+                  font-size: inherit;
+                  cursor: pointer;
+                "
+                >Preview Full Report</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="hero-stats stagger-delay-3">
+          <div class="stat-card">
+            <i class="fas fa-code-branch stat-icon"></i>
+            <span class="stat-value">217</span>
+            <span class="stat-label">Production PRs</span>
+          </div>
+          <div class="stat-card">
+            <i class="fas fa-check-circle stat-icon"></i>
+            <span class="stat-value">100%</span>
+            <span class="stat-label">Merge Success</span>
+          </div>
+          <div class="stat-card">
+            <i class="fas fa-undo stat-icon"></i>
+            <span class="stat-value">0</span>
+            <span class="stat-label">Rollbacks</span>
+          </div>
+          <div class="stat-card">
+            <i class="fas fa-laptop-code stat-icon"></i>
+            <span class="stat-value">12</span>
+            <span class="stat-label">Apps Managed</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section id="overview" class="section">
+      <div class="container">
+        <h3 class="section-title">Portfolio Distribution</h3>
+        <div class="grid-2-col">
+          <div class="chart-container glass-card animate-on-scroll">
+            <h4>Project Contribution</h4>
+            <canvas
+              id="projectChart"
+              role="img"
+              aria-label="Donut chart showing project contribution percentages: ANMA 29%, Tamam 17.5%, NDF 16.1%, others."
+            ></canvas>
+          </div>
+          <div class="chart-container glass-card animate-on-scroll">
+            <h4>Work Type Balance</h4>
+            <canvas
+              id="typeChart"
+              role="img"
+              aria-label="Pie chart showing work type balance: New Features 40.6%, Bug Fixes 15.7%, others."
+            ></canvas>
+          </div>
+        </div>
+
+        <div class="domain-section glass-card full-width animate-on-scroll">
+          <h4>Engineering Domain Complexity</h4>
+          <div class="chart-wrapper">
+            <canvas
+              id="domainChart"
+              role="img"
+              aria-label="Bar chart showing engineering domain complexity for various areas like State, UI, Payment, etc."
+            ></canvas>
+          </div>
+          <p class="analysis-text">
+            <strong>Analysis:</strong> 47.6% of work focused on high-complexity
+            domains (State, Payment, Auth, Performance)
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="achievements" class="section">
+      <div class="container">
+        <h3 class="section-title">Key Engineering Achievements</h3>
+
+        <div class="achievement-grid">
+          <!-- ANMA -->
+          <div class="achievement-card glass-card animate-on-scroll">
+            <div class="card-header">
+              <span class="project-tag">ANMA</span>
+              <h4>E-Learning Payment & Live Lectures</h4>
+            </div>
+            <div class="card-body">
+              <p class="impact-highlight">
+                Designed and implemented complete live lecture system enabling
+                new revenue stream.
+              </p>
+              <ul>
+                <li>
+                  <strong>Live Lecture System:</strong> Real-time countdowns,
+                  seat reservation, payment integration.
+                </li>
+                <li>
+                  <strong>Payment Architecture:</strong> Session-persisted
+                  checkout state, transaction idempotency.
+                </li>
+                <li>
+                  <strong>Canvas CORS Solution:</strong> Creative browser-level
+                  image processing workaround.
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- ECM -->
+          <div class="achievement-card glass-card animate-on-scroll">
+            <div class="card-header">
+              <span class="project-tag">ECM</span>
+              <h4>Enterprise Document Management</h4>
+            </div>
+            <div class="card-body">
+              <p class="impact-highlight">
+                Enabled platform customization through custom fields system
+                without requiring code changes.
+              </p>
+              <ul>
+                <li>
+                  <strong>Custom Fields:</strong> Dynamic field definitions and
+                  runtime form generation.
+                </li>
+                <li>
+                  <strong>Universal Preview:</strong> Unified viewer for images,
+                  PDFs, and videos.
+                </li>
+                <li>
+                  <strong>Archive Management:</strong> Complex classification
+                  tree structures.
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Tamam -->
+          <div class="achievement-card glass-card animate-on-scroll">
+            <div class="card-header">
+              <span class="project-tag">Tamam</span>
+              <h4>Human Resources Platform</h4>
+            </div>
+            <div class="card-body">
+              <p class="impact-highlight">
+                Comprehensive UI development and data integration for HR
+                management.
+              </p>
+              <ul>
+                <li>
+                  <strong>Complex Forms:</strong> Multi-step workflows with
+                  conditional rendering.
+                </li>
+                <li>
+                  <strong>Data Integration:</strong> Robust service layer for HR
+                  backend connection.
+                </li>
+                <li>
+                  <strong>Validation:</strong> Real-time feedback and error
+                  handling.
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- NDF -->
+          <div class="achievement-card glass-card animate-on-scroll">
+            <div class="card-header">
+              <span class="project-tag">NDF</span>
+              <h4>Council Management & RBAC</h4>
+            </div>
+            <div class="card-body">
+              <p class="impact-highlight">
+                Implemented comprehensive Role-Based Access Control (RBAC)
+                system.
+              </p>
+              <ul>
+                <li>
+                  <strong>RBAC:</strong> Hierarchical permissions and dynamic UI
+                  adaptation.
+                </li>
+                <li>
+                  <strong>Secure Documentation:</strong> Council document
+                  circulation and versioning.
+                </li>
+                <li>
+                  <strong>Reactive Forms:</strong> Dynamic validation rules for
+                  government forms.
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Altariq -->
+          <div class="achievement-card glass-card animate-on-scroll">
+            <div class="card-header">
+              <span class="project-tag">Altariq</span>
+              <h4>Architectural Refactoring</h4>
+            </div>
+            <div class="card-body">
+              <p class="impact-highlight">
+                Router decoupling enabled component reusability across contexts.
+              </p>
+              <ul>
+                <li>
+                  <strong>Decoupling:</strong> Component-level reactive state
+                  independent of URL.
+                </li>
+                <li>
+                  <strong>State Management:</strong> Independent pagination and
+                  scroll optimization.
+                </li>
+                <li>
+                  <strong>WebSocket:</strong> Real-time notification system with
+                  optimistic UI.
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Performance -->
+          <div class="achievement-card glass-card animate-on-scroll">
+            <div class="card-header">
+              <span class="project-tag">Performance</span>
+              <h4>Optimization (QuickServe/GMCO)</h4>
+            </div>
+            <div class="card-body">
+              <p class="impact-highlight">
+                Bundle size reduced by 925KB across applications.
+              </p>
+              <ul>
+                <li>
+                  <strong>Tailwind Migration:</strong> 75% CSS size reduction.
+                </li>
+                <li>
+                  <strong>FontAwesome:</strong> 93% smaller bundle via custom
+                  SVG system.
+                </li>
+                <li>
+                  <strong>Load Time:</strong> Improved via code splitting and
+                  lazy loading.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="metrics" class="section alt-bg">
+      <div class="container">
+        <h3 class="section-title">Quality & Leadership Metrics</h3>
+        <div class="metrics-grid">
+          <div class="metric-item glass-card animate-on-scroll">
+            <i class="fas fa-check-circle icon-success"></i>
+            <h4>100%</h4>
+            <p>PR Success Rate</p>
+          </div>
+          <div class="metric-item glass-card animate-on-scroll">
+            <i class="fas fa-shield-alt icon-success"></i>
+            <h4>0</h4>
+            <p>Production Incidents</p>
+          </div>
+          <div class="metric-item glass-card animate-on-scroll">
+            <i class="fas fa-bug icon-success"></i>
+            <h4>85%+</h4>
+            <p>Test Coverage</p>
+          </div>
+          <div class="metric-item glass-card animate-on-scroll">
+            <i class="fas fa-code-branch icon-info"></i>
+            <h4>156</h4>
+            <p>Code Reviews Given</p>
+          </div>
+          <div class="metric-item glass-card animate-on-scroll">
+            <i class="fas fa-book icon-info"></i>
+            <h4>139</h4>
+            <p>Documented PRs</p>
+          </div>
+          <!-- <div class="metric-item glass-card animate-on-scroll">
+            <i class="fas fa-chalkboard-teacher icon-info"></i>
+            <h4>6</h4>
+            <p>Training Sessions</p>
+          </div> -->
+        </div>
+      </div>
+    </section>
+
+    <section id="impact" class="section">
+      <div class="container">
+        <h3 class="section-title">2025 Impact Summary</h3>
+        <div class="impact-grid">
+          <div class="impact-column">
+            <h4><i class="fas fa-layer-group"></i> Scalability</h4>
+            <ul>
+              <li>Decoupled component architecture</li>
+              <li>Eliminated prop drilling</li>
+              <li>Bundle optimization for growth</li>
+            </ul>
+          </div>
+          <div class="impact-column">
+            <h4><i class="fas fa-tools"></i> Maintainability</h4>
+            <ul>
+              <li>Configuration-driven logic</li>
+              <li>Seven reusable patterns established</li>
+              <li>Comprehensive documentation</li>
+            </ul>
+          </div>
+          <div class="impact-column">
+            <h4><i class="fas fa-lock"></i> Security</h4>
+            <ul>
+              <li>Authentication hardening</li>
+              <li>Comprehensive input validation</li>
+              <li>Zero security vulnerabilities</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="ai-tools" class="section alt-bg">
+      <div class="container">
+        <h3 class="section-title">AI Tools & Technology Stack</h3>
+        <p class="section-subtitle">
+          Leveraging cutting-edge AI assistants for enhanced productivity and
+          code quality
+        </p>
+        <div class="ai-tools-grid">
+          <div class="tool-card glass-card animate-on-scroll tool-windsurf">
+            <i class="fas fa-water"></i>
+            <h4>Windsurf</h4>
+            <p>AI-native IDE integration</p>
+          </div>
+          <div class="tool-card glass-card animate-on-scroll tool-claude">
+            <i class="fas fa-robot"></i>
+            <h4>Claude</h4>
+            <p>Advanced reasoning & code generation</p>
+          </div>
+          <div class="tool-card glass-card animate-on-scroll tool-chatgpt">
+            <i class="fas fa-comment-dots"></i>
+            <h4>ChatGPT</h4>
+            <p>General-purpose AI assistance</p>
+          </div>
+          <div class="tool-card glass-card animate-on-scroll tool-gemini">
+            <i class="fas fa-star"></i>
+            <h4>Gemini</h4>
+            <p>Multi-modal AI integration</p>
+          </div>
+          <div class="tool-card glass-card animate-on-scroll tool-notebooklm">
+            <i class="fas fa-book"></i>
+            <h4>NotebookLM</h4>
+            <p>Research & documentation synthesis</p>
+          </div>
+          <div class="tool-card glass-card animate-on-scroll tool-lovable">
+            <i class="fas fa-heart"></i>
+            <h4>Lovable</h4>
+            <p>AI-driven design acceleration</p>
+          </div>
+        </div>
+        <div class="ai-advantages glass-card full-width animate-on-scroll">
+          <h4>Technical Advantages</h4>
+          <div class="advantages-grid">
+            <div class="advantage-item">
+              <i class="fas fa-rocket"></i>
+              <span>Productivity Amplification</span>
+            </div>
+            <div class="advantage-item">
+              <i class="fas fa-check-double"></i>
+              <span>AI-Assisted Code Quality</span>
+            </div>
+            <div class="advantage-item">
+              <i class="fas fa-sitemap"></i>
+              <span>Architecture Planning</span>
+            </div>
+            <div class="advantage-item">
+              <i class="fas fa-file-alt"></i>
+              <span>Automated Documentation</span>
+            </div>
+            <div class="advantage-item">
+              <i class="fas fa-graduation-cap"></i>
+              <span>Learning Acceleration</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="courses" class="section">
+      <div class="container">
+        <h3 class="section-title">Professional Development</h3>
+        <p class="section-subtitle">
+          Continuous investment in cutting-edge technologies and methodologies
+        </p>
+        <div class="courses-container">
+          <div class="course-category glass-card animate-on-scroll">
+            <div class="category-header">
+              <i class="fas fa-code"></i>
+              <h4>Full-Stack Development</h4>
+            </div>
+            <ul class="course-list">
+              <li>
+                <span class="course-provider">Coursera</span> IBM Full Stack
+                Software Developer
+              </li>
+              <li>
+                <span class="course-provider">Udemy</span> Complete React and
+                Next.js
+              </li>
+              <li>
+                <span class="course-provider">Udemy</span> Angular - The
+                Complete Guide
+              </li>
+              <li>
+                <span class="course-provider">Udemy</span> Nuxt and Supabase
+                Mastery
+              </li>
+            </ul>
+          </div>
+
+          <div class="course-category glass-card animate-on-scroll">
+            <div class="category-header">
+              <i class="fas fa-drafting-compass"></i>
+              <h4>Architecture & Design</h4>
+            </div>
+            <ul class="course-list">
+              <li>
+                <span class="course-provider">Udemy</span> Ultimate Design
+                Patterns
+              </li>
+              <li>
+                <span class="course-provider">Udemy</span> Software Architecture
+                Essentials
+              </li>
+              <li>
+                <span class="course-provider">Udemy</span> TypeScript Design
+                Patterns & SOLID
+              </li>
+            </ul>
+          </div>
+
+          <div class="course-category glass-card animate-on-scroll">
+            <div class="category-header">
+              <i class="fas fa-laptop-code"></i>
+              <h4>Advanced JavaScript & TypeScript</h4>
+            </div>
+            <ul class="course-list">
+              <li>
+                <span class="course-provider">Udemy</span> JavaScript Pro:
+                Advanced Concepts
+              </li>
+              <li>
+                <span class="course-provider">Udemy</span> Mastering TypeScript
+              </li>
+            </ul>
+          </div>
+
+          <div class="course-category glass-card animate-on-scroll">
+            <div class="category-header">
+              <i class="fas fa-robot"></i>
+              <h4>AI & Automation</h4>
+            </div>
+            <ul class="course-list">
+              <li>
+                <span class="course-provider">Udemy</span> Mastering Agentic AI
+                with n8n
+              </li>
+              <li>
+                <span class="course-provider">Udemy</span> Claude Code Crash
+                Course
+              </li>
+              <li>
+                <span class="course-provider">Udemy</span> Lovable AI
+                Development
+              </li>
+            </ul>
+          </div>
+
+          <div class="course-category glass-card animate-on-scroll">
+            <div class="category-header">
+              <i class="fas fa-server"></i>
+              <h4>DevOps & Infrastructure</h4>
+            </div>
+            <ul class="course-list">
+              <li>
+                <span class="course-provider">Udemy</span> DevOps Essentials
+              </li>
+            </ul>
+          </div>
+
+          <div class="course-category glass-card animate-on-scroll">
+            <div class="category-header">
+              <i class="fas fa-user-tie"></i>
+              <h4>Professional Mindset</h4>
+            </div>
+            <ul class="course-list">
+              <li>
+                <span class="course-provider">Fasela</span> Senior Mindset
+                Development
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <p>
+          "Solutions consider long-term implications beyond immediate
+          requirements."
+        </p>
+        <div class="footer-meta">
+          <p>Abdulrahman Mashaal - Frontend Engineer</p>
+          <p>Report Date: January 01, 2026</p>
+        </div>
+        <a
+          href="report.pdf"
+          target="_blank"
+          download="Abdulrahman-Mashaal-Report-2025.pdf"
+          class="footer-download"
+          >Download Full Report (PDF)</a
+        >
+      </div>
+    </footer>
+
+    <a href="#" class="back-to-top" aria-label="Back to Top">
+      <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <script src="script.js"></script>
+  </body>
+</html>
