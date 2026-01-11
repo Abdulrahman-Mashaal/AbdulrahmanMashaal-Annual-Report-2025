@@ -393,7 +393,7 @@ h4 {
   /* Masking for edge fade */
   mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
   -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
-  margin: 1rem auto 2rem;
+  margin: 1rem auto;
 }
 
 .tech-slider-row {
@@ -1707,6 +1707,7 @@ h4 {
 
 .report-section {
   margin-bottom: 3rem;
+  margin-top: 2rem;
   padding: 2rem;
 }
 
